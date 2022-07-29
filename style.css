@@ -1,0 +1,133 @@
+body{
+    height: 100%;
+    width:100%;
+    background: darksalmon;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
+.header1{
+
+    border: 2px solid white;
+    width:30%;
+    height:10vh;
+    margin:auto;
+    line-height: 10vh;
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding:5px;
+}
+.container{
+    width: 80vw ;
+    border: 2px solid whitesmoke;
+    margin:auto;
+    background:rgba(255,255,255, 0.2);
+    display: flex;
+    flex-direction: row-reverse; 
+    margin-bottom: 10px;
+
+}
+
+hr{
+
+    border: 1px solid whitesmoke;
+}
+.first, .second{
+
+    width:50%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+    align-items: center;
+    justify-content: center;  
+    padding:30px;
+}
+
+.empty{
+    margin:2px;
+    height: 150px;
+    width: 150px;
+    border: 3px salmon solid;
+    background-color: whitesmoke;
+    text-align: center;
+    line-height: 150px;
+
+}
+.fill{
+    margin:2px;
+    height: 150px;
+    width: 150px;
+    border: 3px salmon solid;
+
+  
+}
+
+.Over{
+    height:70px;
+    width: 200px;
+    border:3px solid whitesmoke;
+    background: darksalmon;
+    color: whitesmoke;
+    font-size: 20pt;
+    text-align: center;
+    line-height: 70px;
+    padding: 10px;
+}
+
+.Over:hover{
+    cursor:default;
+    text-shadow: 0px 0px 6px darksalmon;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    color:salmon;
+    background: whitesmoke;
+    border:6px solid rgba(whitesmoke,0.8);;
+    transition: all 0.6s ease 0s;
+
+        
+}
+
+
+.initial{
+    margin: 20px;
+    line-height:35px;
+}
+
+.shuffle{
+    width: 222px;
+    height:95px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 700;
+    outline:none;
+    
+}
+
+
+#image{
+
+
+      border: 3px solid white;
+      margin:10px;
+      padding: 5px;
+
+
+}
+
+
+#uploader{ 
+width:100%;
+height: 100%;
+position: absolute;
+z-index: 4;
+opacity: 0;
+top: 0;
+left: 0;
+}
+
+.wrap {
+  position: relative;
+}

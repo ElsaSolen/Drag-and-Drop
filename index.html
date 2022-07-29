@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Drag&Drop</title>
+</head>
+
+<body>
+    <div class="header1">Drag & Drop The Images</div>
+
+    <div class="container">
+
+        <div class="first" id="first">
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+        </div>
+        <hr>
+        <div class="second" id="second">
+
+            <div class="fill" style="background: url('./img/game-01.png');  display:none; " draggable="true"></div>
+            <div class="fill" style="background: url('./img/game-02.png');  display:none;" draggable="true"></div>
+            <div class="fill" style="background: url('./img/game-03.png');  display:none;" draggable="true"></div>
+            <div class="fill" style="background: url('./img/game-04.png');  display:none;" draggable="true"></div>
+            <div class="fill" style="background: url('./img/game-05.png');  display:none;" draggable="true"></div>
+            <div class="fill" style="background: url('./img/game-06.png');  display:none;" draggable="true"></div>
+
+            <div class="initial Over wrap" style="margin-top:20px; cursor: pointer;" id="yourP">
+                <label for="file" class="new-button">Play Your Puzzle!
+                    <input type="file" accept="image/*" name="image" id="uploader" onchange='resize()'>
+                </label>
+            </div>
+
+            <div class="initial Over" id="ourP" onclick="PuzzleOurs()" style="cursor: pointer;">Play Our Puzzle!</div>
+            <div class="Over" id="playagain" onclick="PlayAgain()" style="display:none;">Play Again?</div>
+
+        </div>
+
+    </div>
+
+
+    <center><button onclick="start()" id="shuffle" class="Over shuffle" style="visibility: hidden;">Shuffle Me!</button>
+    </center>
+
+    <center><img id="image" onload="CUT(this)" style="display: none;"></center>
+
+    <center>
+        <div id="test" onclick="reveal()" class="Over" style="visibility: hidden ;">
+            <label style="cursor: pointer;">Reveal Image</label>
+        </div>
+    </center>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
